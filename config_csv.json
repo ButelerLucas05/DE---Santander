@@ -1,0 +1,22 @@
+{
+    "path_origen" :"test.csv" ,
+    "path_destino":"test.parquet",
+    "metadata_procesamiento":{
+        "tipo_archivo":"csv",
+        "delimitador":",",
+        "header":true
+    },
+    "metadata_escritura":{
+        "particion":"partition_date",
+        "modo_escritura":"append",
+        "compresion":"snappy"
+    },
+    "columnas_predefinidas": [
+        {"columna":"dt",
+         "valor":"2022-09-29"
+        },
+        {"columna":"test", 
+         "valor":"prueba"}
+    ]
+
+}

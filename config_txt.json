@@ -1,0 +1,52 @@
+{
+    "path_origen" :"test.txt" ,
+    "path_destino":"test_txt.parquet",
+    "metadata_procesamiento":{
+        "tipo_archivo":"txt",
+        "header":true
+    },
+    "metadata_escritura":{
+        "particion":"stock",
+        "modo_escritura":"append",
+        "compresion":"snappy"
+    },
+    "schema" :[
+        {"columna":"stock",
+         "tipo_dato":"string" ,
+         "longitud":"6"
+        },
+        {"columna":"transaction_date",
+         "tipo_dato":"timestamp" ,
+         "longitud":"24"
+        },
+        {"columna":"open_price",
+         "tipo_dato":"float" ,
+         "longitud":"7"
+        },
+        {"columna":"close_price",
+         "tipo_dato":"float" ,
+         "longitud":"7"
+        },
+        {"columna":"max_price",
+         "tipo_dato":"float" ,
+         "longitud":"7"
+        },
+        {"columna":"min_price",
+         "tipo_dato":"float" ,
+         "longitud":"7"
+        },
+        {"columna":"variation",
+         "tipo_dato":"float" ,
+         "longitud":"7"
+        }
+    ],
+    "columnas_predefinidas": [
+        {"columna":"dt",
+         "valor":"2022-09-29"
+        },
+        {"columna":"test", 
+         "valor":"prueba"}
+    ]
+
+
+}
