@@ -72,9 +72,9 @@ No me quedaron del todo claras las condiciones para calcular el KPI,
 
 Para el calculo del KPI seguiria los siguientes pasos:
 
-1 - Obtener el numero total de clientes.
-2 - Obtener el numero total de clientes que cumplen las condiciones del KPI.
-3 - Obtener el porcentaje de clientes que cumplen con las condiciones con respecto del total.
+- Obtener el numero total de clientes.
+- Obtener el numero total de clientes que cumplen las condiciones del KPI.
+- Obtener el porcentaje de clientes que cumplen con las condiciones con respecto del total.
 
 ## Ejercicio 1
 
@@ -111,11 +111,11 @@ LIMIT 10;
 
 
 ### Bonus Track!!!
-1 - Se puede utilizar una cola de mensajes para armar procesos de batch, evitando tener una instancia EC2 o un cluster prendido constantemente para ahorrar costos,
+- 1 ) Se puede utilizar una cola de mensajes para armar procesos de batch, evitando tener una instancia EC2 o un cluster prendido constantemente para ahorrar costos,
     Como lenguaje, no me ataria a uno en particular, se puede construir la solucion con casi cualquier lenguaje cada uno con sus pro y sus contras, aunque para la lectura recomendaria uno que sea compatible con Spark como Python, Java o Scala,  para mejorar la velocidad de procesamiento y aprovechar el paralelismo
 
-2 - Tengo experiencia con Pyspark, principalmente con Databricks como plataforma he creado flujos e ingestas de procesos batch y streaming,
+- 2 ) Tengo experiencia con Pyspark, principalmente con Databricks como plataforma he creado flujos e ingestas de procesos batch y streaming,
     use esta tecnologia en mi paso por  Etermax, Banco Comafi y Primestone (ejecutando desde Glue)
 
-3 - A lo mejor se podria disponibilizar un endpoint que permita calcular el KPI de retencion de clientes para determinadas fechas,
+- 3 ) A lo mejor se podria disponibilizar un endpoint que permita calcular el KPI de retencion de clientes para determinadas fechas,
     o bien se podrian disponibilizar los datos de los eventos o clientes por medio de una API.
