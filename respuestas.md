@@ -67,8 +67,8 @@ Teniendo en cuenta que no realice el modelado por varias dudas al momento de ver
 ## 3 - KPI retencion de clientes:
 
 No me quedaron del todo claras las condiciones para calcular el KPI,
-1 - los dias consecutivos pueden ser de cualquier momento ?, o bien hay que tomar los ultimos 2 dias?
-2 - La duracion de la sesión es la suma de todas las sesiones ?, o bien con que una sesión supere los 5 minutos ya es valido?
+- los dias consecutivos pueden ser de cualquier momento ?, o bien hay que tomar los ultimos 2 dias?
+- La duracion de la sesión es la suma de todas las sesiones ?, o bien con que una sesión supere los 5 minutos ya es valido?
 
 Para el calculo del KPI seguiria los siguientes pasos:
 
