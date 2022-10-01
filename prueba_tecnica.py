@@ -10,6 +10,15 @@ class ProcesamientoDeArchivo:
         self.partition_value = partition_value
     
     def get_config(self):
+        """ 
+            Función encargada de obtener las variables de configuracion
+            Parametros:
+                - self : Objeto de la clase ProcesamientoDeArchivo
+            Devuelve:
+                - config_dict (dict) : Diccionario con valores de configuracion
+        """
+        
+        
         print(f"Obteniendo config de archivo : {self.config_path}")
         config_dict = {}
         # Agregamos valor de particion
@@ -51,6 +60,12 @@ class ProcesamientoDeArchivo:
         return config_dict
     
     def process_file(self,config_dict: dict):
+        """ 
+            Función encargada procesar archivos de tipo CSV y TXT de ancho fijo
+            Parametros
+                - self : Objeto de la clase ProcesamientoDeArchivo
+                - config_dict (dict) : Diccionario con valores de configuracion del archivo a procesar
+        """
         
         ## Desarmamos en diccionario de configuracion en variables
         valor_particion = config_dict["partition_value"]
